@@ -58,3 +58,4 @@ runs:
     - ${{ inputs.repository_username }}
     - ${{ inputs.repository_password }}
     - ${{ inputs.extra_build_dependency_packages }}
+    - ${{ inputs.plugins }}
