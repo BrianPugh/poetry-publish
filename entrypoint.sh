@@ -32,6 +32,10 @@ else
   poetry install --no-dev
 fi
 
+if [ -n "${12}" ]; then
+  poetry plugin add ${12}
+fi
+
 if [ -z $6 ]; then
   poetry build
 else
