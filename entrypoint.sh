@@ -26,14 +26,14 @@ else
   pip install poetry $pre
 fi
 
+if [ -n "${12}" ]; then
+  poetry plugin add ${12}
+fi
+
 if [ -z $7 ]; then
   poetry install
 else
   poetry install --no-dev
-fi
-
-if [ -n "${12}" ]; then
-  poetry plugin add ${12}
 fi
 
 if [ -z $6 ]; then
